@@ -21,6 +21,7 @@ tile_set = SubResource("TileSet_rrbw0")
 format = 2
 
 [node name="TEMPO" type="Timer" parent="."]
+wait_time = 0.3
 autostart = true
 
 [node name="CAMARA" type="Camera2D" parent="."]
