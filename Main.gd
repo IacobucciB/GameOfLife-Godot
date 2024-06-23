@@ -5,15 +5,15 @@ extends Node2D
 @onready var CAM = $CAMARA
 
 var layer_id = 0
-var tile_id = 3
+var tile_id = 0
 var atlas_dead_coords = Vector2i(1, 0)
 var atlas_alive_coords = Vector2i(0, 0)
 
 var rng = RandomNumberGenerator.new()
 
-var FILAS = 30
-var COLUMNAS = 30
-var TAM_CELULA = 32
+var FILAS = 72
+var COLUMNAS = 128
+var TAM_CELULA = 10
 var TABLERO = []
 var TABLERO_BUFFER = []
 var VIVA = 1
