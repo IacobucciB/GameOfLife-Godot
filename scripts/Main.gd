@@ -4,6 +4,11 @@ extends Node2D
 @onready var DELAY = $TEMPO
 @onready var CAM = $CAMARA
 
+# Get Nodes
+var MAP : TileMap
+var CAMERA : Camera2D
+var DEL : Timer
+
 var layer_id = 0
 var tile_id = 0
 var atlas_dead_coords = Vector2i(1, 0)
@@ -101,6 +106,12 @@ func actualizar_mapa():
 				TABLERO[filas][columnas] = MUERTA
 
 func _ready():
+	
+	MAP = $MAPA
+	CAMERA = $CAMARA
+	DEL = $TEMPO
+	
+	
 	iniciar_tablero()
 	iniciar_tablero_buffer()
 	iniciar_celulas()

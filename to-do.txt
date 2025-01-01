@@ -1,0 +1,4 @@
+- Create the TileMap using icon.svg, this file format is better for resize
+- As for the Matrix, try to use the single Array approach for the implementation
+- The cells should be all initialized first, then the game logic should change them from visible to invisible (and viceversa)
+- Change everything to English

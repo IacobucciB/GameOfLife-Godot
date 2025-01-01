@@ -34,6 +34,5 @@ autostart = true
 
 [node name="CAMARA" type="Camera2D" parent="."]
 anchor_mode = 0
-zoom = Vector2(1.001, 1)
 
 [connection signal="timeout" from="TEMPO" to="." method="_on_tempo_timeout"]
