@@ -1,17 +1,17 @@
 [gd_scene load_steps=7 format=3 uid="uid://claeq0knjb1mm"]
 
-[ext_resource type="Script" path="res://Main.gd" id="1_r1tn5"]
-[ext_resource type="Texture2D" uid="uid://qbe74awlq1xq" path="res://dead_alive_10x10.png" id="2_84yj3"]
-[ext_resource type="Texture2D" uid="uid://d3ky06b84dytb" path="res://dead_alive.png" id="2_whhsr"]
+[ext_resource type="Script" path="res://scripts/Main.gd" id="1_nokbn"]
+[ext_resource type="Texture2D" uid="uid://qbe74awlq1xq" path="res://assets/dead_alive_10x10.png" id="2_hvecy"]
+[ext_resource type="Texture2D" uid="uid://d3ky06b84dytb" path="res://assets/dead_alive.png" id="3_xfqkq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wtywu"]
-texture = ExtResource("2_84yj3")
+texture = ExtResource("2_hvecy")
 texture_region_size = Vector2i(10, 10)
 0:0/0 = 0
 1:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y57vd"]
-texture = ExtResource("2_whhsr")
+texture = ExtResource("3_xfqkq")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 1:0/0 = 0
@@ -22,7 +22,7 @@ sources/3 = SubResource("TileSetAtlasSource_y57vd")
 sources/0 = SubResource("TileSetAtlasSource_wtywu")
 
 [node name="Main" type="Node2D"]
-script = ExtResource("1_r1tn5")
+script = ExtResource("1_nokbn")
 
 [node name="MAPA" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_rrbw0")
