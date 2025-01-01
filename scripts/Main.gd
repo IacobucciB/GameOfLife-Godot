@@ -107,7 +107,7 @@ func _ready():
 	actualizar_tablero()
 	DELAY.start()
 
-func _process(delta):
+func _process(_delta):
 	pass
 
 func _on_tempo_timeout():
